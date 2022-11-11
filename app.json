@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/cover/cover",
+    "pages/main/main",
+    "pages/award/award",
+    "pages/single/single",
+    "pages/rules/rules",
+    "pages/online/online",
+    "pages/mul-cover/mul-cover",
+    "pages/mulitplayer/mulitplayer",
+    "pages/room/room",
+    "pages/room1/room1"
+  ],
+
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "博饼小游戏",
+    "navigationBarTextStyle":"white"
+  },
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
+
+
+
+

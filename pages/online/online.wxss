@@ -1,0 +1,65 @@
+
+.back{
+  width: 120%;
+  height: 100%;
+  position:fixed;
+  background-size: 150% 120%;
+  z-index: -1;
+  margin-left: -150rpx;
+}
+
+.imagesize{
+  display:flex;
+  height: 800rpx;                 
+  justify-content: center;       
+  align-items:center;               
+  z-index: -1;
+  background-size: 100% 100%;
+ }
+ .imagesize image { 
+   width:400rpx;
+   height:400rpx;
+   }
+
+
+
+
+.top{
+  text-align: center;
+  color: rgb(238, 241, 28);
+  width: 440rpx;
+  height: 100rpx;
+  font-size: 60rpx;
+  margin: 20px auto;
+}
+.point1 image,.point2 image,.point3 image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.point1 image{
+  margin-top:120rpx;
+  margin-left: 150rpx;
+}
+.point2 image{
+   margin-top: 10rpx;
+   margin-left: 150rpx;
+}
+.point3 image{
+  margin-top: 10rpx;
+  margin-left: 150rpx;
+}
+.btn{
+  width:60%;
+  margin-left: 150rpx;
+  height:120rpx;
+  background:green;
+  border-radius: 20rpx;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 60rpx;
+  margin-top: 220rpx;
+
+}
+
+
+

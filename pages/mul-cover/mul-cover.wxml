@@ -1,0 +1,34 @@
+<!--mul-cover.wxml-->
+
+
+<view class="content"></view>
+  <!--pics文件夹下的background.jpg文件-->
+  <image class='back' src="../../image/bobing-background.jpg" mode="aspectFill"></image>
+<image src="../../image/duoren.png" mode="widthFix" style="width: 424rpx; height: 103rpx; display: inline-block; box-sizing: border-box; position: relative; left: 113rpx; top: 421rpx"></image>
+  <!--页面其它部分-->
+
+
+
+<view class="container">
+  <view class="userinfo">
+    
+    
+  </view>
+
+  <button  bindtap='logBtn1' class='btn1'  style="position: relative; left: 1rpx; top: 560rpx; color: #641013; width: 320rpx; height: 120rpx; display: flex; box-sizing: border-box; background-color: #F8F9D1">
+    
+    <view> 加入房间</view>
+ </button>
+
+ <button  bindtap="mulitplayer" class='btn2'  style="position: relative; left: 1rpx; top: 598rpx; color: #641013; width: 320rpx; height: 120rpx; display: flex; background-color: #F8F9D1" plain="{{ true }}"disabled='{{disabled}}'>
+    
+    <view> 创建房间</view>
+  </button>
+
+<!--弹框-->
+<modal hidden="{{hiddenmodalput}}" title="博饼人数" confirm-text="确定" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm"> 
+    <input class="text" type='text' value="{{inputValue}}" bindinput="input" placeholder="请输入人数（不少于两人）" focus="{{inputShowed}}"/>  
+</modal>
+
+
+</view>

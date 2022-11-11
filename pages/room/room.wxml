@@ -1,0 +1,31 @@
+<!--pages/rules/rules.wxml-->
+
+<view class="content"></view>
+  <!--pics文件夹下的background.jpg文件-->
+  <image class='back' src="../../image/room-background.png" mode="aspectFill"></image> 
+  <!--页面其它部分-->
+
+
+<button  bindtap='logBtn1' class='btn1'  style="position: relative; left: -174rpx; top: 244rpx; width: 340rpx; height: 144rpx; display: flex; box-sizing: border-box">
+    <view> 房间1：状元是我</view>
+    <view>  2人</view>
+ </button>
+ <button  bindtap='logBtn2' class='btn1'style=" margin-top: 40rpx;"  style="position: relative; left: 192rpx; top: 395rpx; width: 380rpx; height: 144rpx; display: flex; box-sizing: border-box">
+    <view> 房间2：666</view>
+    <view>  3人</view>
+ </button>
+ <button  bindtap='logBtn3' class='btn1'  style="position: relative; left: -174rpx; top: 500rpx; width: 380rpx">
+    <view> 房间3：软工好难</view>
+    <view>  3人</view>
+ </button>
+ <button  bindtap='logBtn4' class='btn1'  style="position: relative; left: 192rpx; top: 616rpx; width: 380rpx">
+    <view> 房间4：芝士雪豹</view>
+    <view> 4人</view>
+ </button>
+
+
+
+
+
+
+

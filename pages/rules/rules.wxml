@@ -1,0 +1,10 @@
+<!--pages/rules/rules.wxml-->
+<view class="content"></view>
+  <!--pics文件夹下的background.jpg文件-->
+  <image  src="../../image/rule.png" mode="aspectFit"style=" height: 1200rpx;margin-top: 40rpx;" style="position: relative; left: 19rpx; top: 418rpx; width: 618rpx; height: 692rpx; display: inline-block; box-sizing: border-box"></image>
+<image class='background' src="../../image/rule-background.png" mode="aspectFill"></image>
+<text class="text" style="position: relative; left: 205rpx; top: -486rpx; width: 340rpx; height: 144rpx; display: inline-block; box-sizing: border-box">博饼规则</text>
+
+
+
+

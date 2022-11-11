@@ -1,0 +1,47 @@
+
+<view class="content"></view>
+  <!--pics文件夹下的background.jpg文件-->
+  <image class='back' src="../../image/bobing-background.jpg" mode="aspectFill"></image>
+<image  class='back1' src="../../image/wan.png" mode="aspectFit" style="position: relative; left: -7rpx; top: 198rpx; width: 686rpx; height: 558rpx; display: inline-block; box-sizing: border-box"></image>
+<image  src="../../image/room.png" mode="widthFix" style="width: 226rpx; height: 120rpx; display: block; box-sizing: border-box; left: 263rpx; top: -538rpx; position: relative"></image>
+<image  src="../../image/IMG_9603(20221108-204111).png" mode="widthFix" style="position: relative; width: 120rpx; height: 100rpx; display: inline-block; box-sizing: border-box; left: 144rpx; top: 188rpx"></image>
+<image  src="../../image/IMG_9604(20221108-204116).png" mode="widthFix" style="position: relative; width: 120rpx; height: 100rpx; display: inline-block; box-sizing: border-box; left: 402rpx; top: 188rpx"></image>
+  <!--页面其它部分-->
+
+
+<view class='top' style="position: relative; left: 9rpx; top: 180rpx">{{txt}}</view>
+<view class='point1'>
+ <image src='{{one_img}}' style="position: relative; left: 0rpx; top: -841rpx"></image>
+<image src='{{two_img}}' style="position: relative; left: -150rpx; top: -841rpx"></image>
+</view>
+<view class='point2'>
+ <image src='{{three_img}}' style="position: relative; left: -4rpx; top: -818rpx"></image>
+ <image src='{{four_img}}' style="position: relative; left: -6rpx; top: -1015rpx"></image>
+</view>
+<view class='point3'>
+ <image src='{{five_img}}' style="position: relative; left: 151rpx; top: -988rpx"></image>
+ <image src='{{six_img}}' style="position: relative; left: 0rpx; top: -988rpx"></image>
+</view>
+<view class='btn' bindtap='enter' style="position: relative; left: 9rpx; top: -695rpx">{{msg}}</view>
+
+
+
+
+<view class='container'>
+  <view class='page-body'>
+    < text class='h1'></ text >
+    <view class='demo-box'>
+      <view class="btn-area">
+          <view class="tc"></view>
+          <text wx:if="{{switchStatus}}" style="position: relative; left: -8rpx; top: -600rpx">音乐开启</text>
+          
+          
+           </view>
+    </view>
+  </view>
+</view>
+<button  bindtap='logBtn1' class='btn1'  style="position: relative; left: 8rpx; top: -853rpx; width: 440rpx; height: 100rpx; display: block; box-sizing: border-box" plain='true' >
+    <view> 查看奖励</view>
+ </button>
+<text style="position: relative; left: 152rpx; top: -1459rpx">玩家一</text>
+<text style="position: relative; left: 438rpx; top: -1458rpx">玩家二</text>

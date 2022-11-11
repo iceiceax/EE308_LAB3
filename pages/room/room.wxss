@@ -1,0 +1,30 @@
+/* pages/cover/cover.wxss */
+
+.back{
+  width: 120%;
+  height: 100%;
+  position:fixed;
+  background-size: 150% 120%;
+  z-index: -1;
+  margin-left: -75rpx;
+}
+
+
+.btn1 {
+  width: 40% !important;
+  background-color: #F8F9D1;
+  color: #101010 100%;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+ font-size: 40rpx;
+
+}
+.btn1::after {
+  border-radius: 98rpx;
+  border: 0; 
+
+}

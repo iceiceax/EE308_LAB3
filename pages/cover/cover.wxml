@@ -1,0 +1,22 @@
+<!--pages/rules/rules.wxml-->
+
+<view class="content"></view>
+  <!--pics文件夹下的background.jpg文件-->
+  <image class='back' src="../../image/backgrond1.png" mode="aspectFill"></image> 
+  <image class='back' src="../../image/background2.png" mode="widthFix"></image>
+  <!--页面其它部分-->
+
+
+<button  bindtap='logBtn1' class='btn1' >
+    <view> 进入游戏</view>
+ </button>
+ <button  bindtap='logBtn2' class='btn2'style=" margin-top: 40rpx;" >
+    <view> 游戏规则</view>
+ </button>
+
+
+
+
+
+
+

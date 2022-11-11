@@ -1,0 +1,189 @@
+/**mul-cover.wxss**/
+
+
+
+.back{
+  width: 110%;
+  height: 100%;
+  position:fixed;
+  background-size: 150% 120%;
+  z-index: -1;
+  margin-left: -89rpx;
+
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 400rpx;
+}
+
+.ID_Badge {
+  padding-top: 20rpx;
+  color: blue;
+
+}
+
+.ID_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 300rpx;
+}
+
+.pics {
+  margin-top: 130rpx !important;
+  width: 500rpx;
+}
+
+.btn1 {
+  width: 80%;
+  height: 95rpx;
+  margin-top: 100rpx;
+  margin-bottom: -15rpx;
+  background-color: #FFB719;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.btn1::after {
+  border-radius: 98rpx;
+  border: 0; 
+
+}
+.btn2 {
+  width: 80%;
+  height: 95rpx;
+  margin-top: 65rpx;
+  margin-bottom: -15rpx;
+  background-color: #FFB719;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.btn2::after {
+  border-radius: 98rpx;
+  border: 0; 
+
+}
+
+.mask{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-color:rgba(0, 0, 0, .2);
+  z-index: 2;
+}
+.eject{
+  display: flex;
+  position: fixed;
+  width: 80%;
+  height: 25%;
+  left: 10%;
+  top: 25%;
+  background-color:rgba(255, 255, 255, 0.986);
+  justify-content:center;
+  align-items: center;
+  z-index: 3;
+  margin: 1%;
+  border-radius: 3%;
+}
+.Input1{
+  display: flex;
+  position: fixed;
+  width: 60%;
+  height: 3%;
+  left: 20%;
+  top: 39%;
+  background-color:rgba(165, 161, 161, 0.397);
+  justify-content:center;
+  align-items: center;
+  z-index: 3;
+  border-radius: 4% ;
+}
+
+.Input2{
+  display: flex;
+  position: fixed;
+  width: 60%;
+  height: 3%;
+  left: 20%;
+  top: 33%;
+  background-color:rgba(165, 161, 161, 0.397);
+  justify-content:center;
+  align-items: center;
+  z-index: 3;
+  border-radius: 4% ;
+}
+.Input3{
+  display: flex;
+  position: fixed;
+  width: 60%;
+  height: 3%;
+  left: 20%;
+  top: 27%;
+  background-color:rgba(165, 161, 161, 0.397);
+  justify-content:center;
+  align-items: center;
+  z-index: 3;
+  border-radius: 4% ;
+}
+.goback{
+  position: fixed; 
+  left: 60%  ;
+  top : 44%; 
+  width: 100%; 
+  height: 70rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+.create{
+  position: fixed; 
+  left: 25%  ;
+  top : 44%; 
+  width: 100%; 
+  height: 70rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+.switchChange{
+  width: 105%;
+  height: 100%;
+  margin-bottom: -15rpx !important;
+  z-index: -1;
+  margin-left: -50rpx;
+
+}
+.text {
+  border-style: solid;
+  border-width: thin;
+  border-color: gray;
+  border-radius: 10px;
+  text-align: center;
+  height: 30px;  
+}

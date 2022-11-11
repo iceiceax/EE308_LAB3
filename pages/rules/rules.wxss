@@ -1,0 +1,28 @@
+/* pages/rules/rules.wxss */
+
+.background{
+  width: 130%;
+  height: 100%;
+  position:fixed;
+  background-size: 150% 120%;
+  z-index: -1;
+  margin-left: -700rpx;
+}
+.text {
+  /* 字体大小 */
+  font-size: 40px;
+  /* 字体颜色 */
+  color: rgb(0, 0, 0);
+  /* 字体风格-粗细 */
+  font-weight: bold;
+  background-color: #F8F9D1;
+  border-width:3px;
+  border-style: solid;
+  width: 200rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  display: inline-block;
+  
+}
+

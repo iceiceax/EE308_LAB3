@@ -1,0 +1,29 @@
+<!--main.wxml-->
+
+
+<view class="content"></view>
+  <!--pics文件夹下的background.jpg文件-->
+  <image class='back' src="../../image/main-background.png" mode="aspectFill"></image>
+  <!--页面其它部分-->
+
+
+
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获头像昵称 </button>
+    <block wx:else>
+      
+      
+    </block>
+  </view>
+
+  <button  bindtap='logBtn1' class='btn1'  style="position: relative; left: -176rpx; top: 670rpx; color: #641013; width: 320rpx; height: 120rpx; display: flex; box-sizing: border-box">
+    
+    <view> 单机模式</view>
+ </button>
+
+ <button  bindtap="logBtn2" class='btn2'  style="position: relative; left: 188rpx; top: 500rpx; color: #641013; width: 320rpx; height: 120rpx; display: flex;  box-sizing: border-box">
+    
+    <view> 多人模式</view>
+  </button>
+</view>

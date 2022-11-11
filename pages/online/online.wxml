@@ -1,0 +1,37 @@
+
+<view class="content"></view>
+  <!--pics文件夹下的background.jpg文件-->
+  <image class='back' src="../../image/tu1.png" mode="aspectFill"></image>
+  <!--页面其它部分-->
+
+
+<view class='top'>{{txt}}</view>
+<view class='point1'>
+ <image src='{{one_img}}'></image>
+<image src='{{two_img}}'></image>
+</view>
+<view class='point2'>
+ <image src='{{three_img}}'></image>
+ <image src='{{four_img}}'></image>
+</view>
+<view class='point3'>
+ <image src='{{five_img}}'></image>
+ <image src='{{six_img}}'></image>
+</view>
+<view class='btn' bindtap='enter'>{{msg}}</view>
+
+
+<!-- demo3.9 backgroundAudio页面 backgroundAudio.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    < text class='h1'></ text >
+    <view class='demo-box'>
+      <view class="btn-area">
+          <view class="tc"></view>
+          <text wx:if="{{switchStatus}}">音乐开启</text>
+          <text wx:else>音乐关闭</text>
+          <switch bindchange="switchChange" checked />
+           </view>
+    </view>
+  </view>
+</view>

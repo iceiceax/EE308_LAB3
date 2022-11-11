@@ -1,0 +1,86 @@
+/* pages/details/details.wxss */
+
+
+
+.back{
+  width: 120%;
+  height: 100%;
+  position:fixed;
+  background-size: 150% 120%;
+  z-index: -1;
+  margin-left: -75rpx;
+}
+
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  font-size: 50rpx;
+}
+
+.lesson {
+  height: 190rpx;
+  padding-left: 20rpx;
+  color: white;
+}
+
+.lessonPic {
+  position: absolute;
+  height: 150rpx;
+  width: 150rpx;
+}
+
+.lessonName {
+  position: absolute;
+  margin-left: 220rpx;
+  font-size: 35rpx;
+}
+
+.lessonIntroduce {
+  position: absolute;
+  margin-left: 220rpx;
+  margin-top: 60rpx;
+  margin-right: 20rpx;
+  color: rgb(185, 161, 161);
+  font-size: 28rpx;
+}
+
+.drawer_box {
+  width: 650rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  z-index: 1001;
+  background: #FAFAFA;
+  margin: -150px 50rpx 0 50rpx;
+}
+
+.drawer_content {
+  border-top: 1.5px solid #E8E8EA;
+  height: 420rpx;
+  overflow-y: scroll; /* 超出父盒子高度可滚动 */
+}
+
+.btn_ok {
+  padding: 20rpx;
+  font: 40rpx "microsoft yahei";
+  text-align: center;
+  border-top: 3rpx solid #E8E8EA;
+  color: #3CC51F;
+}
+
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: black;
+  opacity: 0.5;
+  overflow: hidden;
+}
+

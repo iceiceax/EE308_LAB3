@@ -1,0 +1,25 @@
+
+<view class="content"></view>
+  <!--pics文件夹下的background.jpg文件-->
+  <image class='back' src="../../image/bobing-background.jpg" mode="aspectFill"></image>
+<image  class='back1' src="../../image/wan.png" mode="aspectFit" style="position: relative; left: -7rpx; top: 198rpx; width: 686rpx; height: 558rpx; display: inline-block; box-sizing: border-box"></image>
+  <!--页面其它部分-->
+
+
+<view class='top' style="position: relative; left: 1rpx; top: 140rpx">{{txt}}</view>
+<view class='point1'>
+ <image src='{{one_img}}' style="position: relative; left: 0rpx; top: -644rpx"></image>
+<image src='{{two_img}}' style="position: relative; left: -150rpx; top: -644rpx"></image>
+</view>
+<view class='point2'>
+ <image src='{{three_img}}' style="position: relative; left: -8rpx; top: -622rpx"></image>
+ <image src='{{four_img}}' style="position: relative; left: 15rpx; top: -806rpx"></image>
+</view>
+<view class='point3'>
+ <image src='{{five_img}}' style="position: relative; left: 151rpx; top: -794rpx"></image>
+ <image src='{{six_img}}' style="position: relative; left: 22rpx; top: -794rpx"></image>
+</view>
+<view class='btn' bindtap='enter' style="position: relative; left: 10rpx; top: -695rpx">{{msg}}</view>
+
+
+

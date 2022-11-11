@@ -1,0 +1,86 @@
+<!--pages/mulitplayer/mulitplayer.wxml-->
+
+<view class="container">
+ 
+<view class="background">
+  <image class="bg" src="/image/bobing-background.jpg"mode="aspectFill"></image>
+  <image  class='bg1' src="../../image/wan.png" mode="widthFix"  ></image>
+</view>
+
+<view class='setting'>
+  <button class="end" bindtap="end" style="position: relative; left: -26rpx; top: 1003rpx; width: 334rpx; height: 92rpx; display: block; box-sizing: border-box">结束博饼</button>
+  <button class="add" bindtap="add" style="position: relative; left: 22rpx; top: 1003rpx; width: 332rpx; height: 92rpx; display: block; box-sizing: border-box">添加玩家</button>
+</view>
+
+
+<view class="bowl">
+  <image class="w" src="/images/bowl.png"></image>
+</view>
+
+<text class='text'>{{txt}}</text>
+
+  <view class='point1'>
+    <image class="one" src='{{one_img}}' style="width: 150rpx; height: 146rpx; display: inline-block; box-sizing: border-box"></image>
+    <image class="two" src='{{two_img}}' style="width: 150rpx; height: 146rpx; display: inline-block; box-sizing: border-box"></image>
+    <image class="three" src='{{three_img}}' style="width: 150rpx; height: 146rpx; display: inline-block; box-sizing: border-box"></image>
+  </view>
+  <view class='point2'>
+    <image class="four" src='{{four_img}}' style="width: 150rpx; height: 148rpx; display: inline-block; box-sizing: border-box"></image>
+    <image class="five" src='{{five_img}}' style="width: 150rpx; height: 146rpx; display: inline-block; box-sizing: border-box"></image>
+    <image class="six" src='{{six_img}}' style="width: 150rpx; height: 146rpx; display: inline-block; box-sizing: border-box"></image>
+  </view>
+  <button  bindtap='logBtn1' class='btn1'plain='true'  style="position: relative; left: -1rpx; top: 279rpx; width: 421rpx; height: 92rpx; display: flex; box-sizing: border-box">
+    <view> 查看奖励</view>
+ </button>
+<view class='view' style="position: relative; left: 0rpx; top: -86rpx">
+  <button bindtap='begin'  disabled='{{disabled}}' plain='true' style="width: 226rpx; height: 72rpx; display: block; box-sizing: border-box; left: 0rpx; top: -1rpx; position: relative">博一博</button>
+</view>
+
+<text class="reminder" style="position: relative; left: 0rpx; top: -30rpx">请玩家{{index}}掷骰子！</text>
+
+<view class="table">
+    <view class="thead">
+        <view class="tr">
+            <view class="th"> </view>
+            <view class="th">状元</view>
+            <view class="th">对堂</view>
+            <view class="th">三红</view>
+            <view class="th">四进</view>
+            <view class="th">二举</view>
+            <view class="th">一秀</view>
+        </view>
+    </view>
+    <view class="tbody">
+        <view class="box">
+            <view class="tr">
+                <view class="td">剩余</view>
+                <view class="td">{{1-total[5]}}</view>
+                <view class="td">{{2-total[4]}}</view>
+                <view class="td">{{4-total[3]}}</view>
+                <view class="td">{{8-total[2]}}</view>
+                <view class="td">{{16-total[1]}}</view>
+                <view class="td">{{32-total[0]}}</view>
+            </view>
+            
+            <block wx:for="{{player}}" wx:for-index="ind">
+            
+                <view class="tr">
+                    <view class="td">玩家{{ind+1}}</view>
+                    <view class="td">{{item.record[5]}}</view>
+                    <view class="td">{{item.record[4]}}</view>
+                    <view class="td">{{item.record[3]}}</view>
+                    <view class="td">{{item.record[2]}}</view>
+                    <view class="td">{{item.record[1]}}</view>
+                    <view class="td">{{item.record[0]}}</view>
+                </view>
+            </block>
+
+        </view>
+    </view>
+</view>
+<!--弹框-->
+<modal hidden="{{hiddenmodalput}}" title="添加人数" confirm-text="确定" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm"> 
+    <input class="inputText" type='text' value="{{inputValue}}" bindinput="input" placeholder="请输入人数" focus="{{inputShowed}}"/>  
+</modal>
+
+</view>
